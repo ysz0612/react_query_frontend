@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const saleAllGetApi = async () => {
+export const salesAllGetApi = async () => {
     try{
         const response = await axios.get("http://localhost:3001/sales");
         return response.data;
@@ -10,7 +10,7 @@ export const saleAllGetApi = async () => {
     }
 }
 
-export const saleGetApi = async (id) => {
+export const salesGetApi = async (id) => {
     try{
         const response = await axios.get(`http://localhost:3001/sales/${id}`);
         return response.data;
@@ -20,7 +20,7 @@ export const saleGetApi = async (id) => {
     }
 }
 
-export const salePostApi = async (dataObj) => {
+export const salesPostApi = async (dataObj) => {
     try{
         const response = await axios.post(
             "http://localhost:3001/sales",
@@ -33,7 +33,7 @@ export const salePostApi = async (dataObj) => {
     }
 }
 
-export const salePutApi = async (dataObj) => {
+export const salesPutApi = async (dataObj) => {
     try{
         const response = await axios.put(
             `http://localhost:3001/sales/${dataObj.id}`,
@@ -46,7 +46,7 @@ export const salePutApi = async (dataObj) => {
     }
 }
 
-export const saleDeleteApi = async (id) => {
+export const salesDeleteApi = async (id) => {
     try{
         await axios.delete(`http://localhost:3001/sales/${id}`);
         return id;

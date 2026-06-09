@@ -62,7 +62,7 @@ const ProductTable = () => {
         flex: 1,
       },
       {
-        headerName: "상품 관리",
+        headerName: "상품 정보",
         flex: 1.2,
         cellRenderer: (params) => (
           <div
@@ -130,7 +130,7 @@ const ProductTable = () => {
             color: "#1e293b",
           }}
         >
-          상품 관리
+          상품 정보
         </h1>
 
         <button

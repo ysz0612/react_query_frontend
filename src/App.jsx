@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import HomePage from './no1_pages/HomePage'
 import TodoPage from './no1_pages/TodoPage'
 import EmployeePage from './no1_pages/EmployeePage'
-import SalePage from './no1_pages/SalePage'
+import SalesPage from './no1_pages/SalesPage'
 import ProductPage from './no1_pages/ProductPage'
 import 'ag-grid-community/styles/ag-grid.css'
 import 'ag-grid-community/styles/ag-theme-alpine.css'
@@ -44,7 +44,7 @@ function App() {
                   />
                   <Route
                     path="/sales"
-                    element={<SalePage/>}
+                    element={<SalesPage/>}
                   />
                 </Routes>
               </PageContainer>
@@ -61,22 +61,22 @@ export default App
 
 
 const Container = styled.div`
-    width: 100%;
-    min-height: 100vh;
-    background: #f1f5f9;
+  width: 100%;
+  min-height: 100vh;
+  background: #f4f6f8;
 `;
 
 const BodyLayout = styled.div`
-    display: flex;
+  display: flex;
 `;
 
 const PageContainer = styled.main`
-    flex: 1;
-    padding: 32px;
-    background: #f8fafc;
-    min-height: calc(100vh - 70px);
+  flex: 1;
+  padding: 32px;
+  background: #f4f6f8;
+  min-height: calc(100vh - 70px);
 
-    @media (max-width: 768px){
-        padding: 90px 20px 20px 20px;
-    }
+  @media (max-width: 768px) {
+    padding: 90px 20px 20px 20px;
+  }
 `;
